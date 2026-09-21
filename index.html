@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of E-JUST Cyber Security Club (Egypt-Japan University of Science and Technology). Learn Linux, Networking, CCNA, CCNP, Fortinet NSE, Ethical Hacking, SOC, and CTF competitions.">
+    <meta name="keywords" content="E-JUST, Cyber Security Club, Cisco Networking Academy, Fortinet Academic Partner, CCNA, CCNP, Ethical Hacking, CTF, Egypt-Japan University">
+    <meta name="author" content="E-JUST Cyber Security Club">
+    <meta name="theme-color" content="#f7f6f2">
+    <title>E-JUST Cyber Security Club | Egypt-Japan University of Science and Technology</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="assets/network-infrastructure.jpg">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/cyber-club-logo.png">
+</head>
+<body>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <!-- Top Scroll Reading Progress Indicator -->
+    <div id="scroll-progress-bar" class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         HEADER / NAVBAR
+    ========================================================== -->
+    <header class="site-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand" aria-label="E-JUST Cyber Security Club Home">
+                <img src="assets/cyber-club-logo.png" alt="E-JUST Cyber Security Club Logo" class="brand-logo" width="46" height="46">
+                <div class="brand-text">
+                    <span class="brand-title">E-JUST Cyber Security Club</span>
+                    <span class="brand-sub">Egypt-Japan University of Science & Technology</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#partners" class="nav-link">Opportunities</a></li>
+                    <li class="nav-item"><a href="#fortinet" class="nav-link">Fortinet</a></li>
+                    <li class="nav-item"><a href="#cisco" class="nav-link">Cisco</a></li>
+                    <li class="nav-item"><a href="#activities" class="nav-link">Activities</a></li>
+                    <li class="nav-item"><a href="#ctf" class="nav-link">CTF</a></li>
+                    <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                    <li class="nav-item"><a href="#join" class="nav-link">Join</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#join" class="btn btn-primary btn-sm nav-cta">Join Club</a>
+                <!-- Mobile Hamburger Button -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation" aria-hidden="true" inert>
+        <div class="drawer-header">
+            <div class="drawer-brand">
+                <img src="assets/cyber-club-logo.png" alt="Cyber Security Club" width="36" height="36">
+                <span>E-JUST Cyber Club</span>
+            </div>
+            <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-list">
+            <li><a href="#home" class="drawer-link">Home</a></li>
+            <li><a href="#about" class="drawer-link">About</a></li>
+            <li><a href="#partners" class="drawer-link">Opportunities</a></li>
+            <li><a href="#fortinet" class="drawer-link">Fortinet Academic Partner</a></li>
+            <li><a href="#cisco" class="drawer-link">Cisco Networking Academy</a></li>
+            <li><a href="#activities" class="drawer-link">Activities & Labs</a></li>
+            <li><a href="#ctf" class="drawer-link">Capture The Flag (CTF)</a></li>
+            <li><a href="#roadmap" class="drawer-link">Cybersecurity Roadmap</a></li>
+            <li><a href="#join" class="drawer-link">Join the Club</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <a href="#join" class="btn btn-primary btn-block drawer-btn">Join Club</a>
+        </div>
+    </div>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+    <main id="main-content">
+        <!-- =========================================================
+             HERO SECTION
+        ========================================================== -->
+        <section class="hero-section" id="home" aria-labelledby="hero-title">
+            <img class="hero-photo" src="assets/network-infrastructure.jpg" alt="Network infrastructure inside a server rack" fetchpriority="high" width="2000" height="1122">
+            <div class="hero-shade" aria-hidden="true"></div>
+            <canvas id="cyber-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+            <div class="container hero-content">
+                <p class="hero-subtitle">EGYPT-JAPAN UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+                <h1 class="hero-title" id="hero-title"><span class="hero-university">E-JUST</span>Cyber Security<br>Club<span class="red-period">.</span></h1>
+                <p class="hero-slogan">Learn. Build. Defend.</p>
+                <p class="hero-desc">From your first Linux command to real-world security. Build your skills, earn certifications, and find your people.</p>
+                <div class="hero-buttons">
+                    <a href="#partners" class="btn btn-primary btn-lg">Explore Opportunities <span aria-hidden="true">↗</span></a>
+                    <a href="#join" class="hero-join">Join the Club <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-bottom container">
+                <span><i class="status-dot" aria-hidden="true"></i> FOR E-JUST STUDENTS</span>
+                <span class="hero-coordinate">KNOWLEDGE INTO CAPABILITY.</span>
+                <a href="#about">DISCOVER THE CLUB <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             ABOUT SECTION
+        ========================================================== -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h2 class="section-title">More than a club.<br>A place to build your edge.</h2>
+                    <p class="section-desc">
+                        The E-JUST Cyber Security Club connects university education with practical cybersecurity knowledge, hands-on labs, professional certifications and industry technologies.
+                    </p>
+                </div>
+
+                <div class="grid grid-4 about-grid">
+                    <!-- Card 1: Learn -->
+                    <div class="feature-card reveal" data-delay="100">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Learn</h3>
+                        <p class="feature-text">
+                            Linux, networking, cybersecurity fundamentals and security technologies taught with deep engineering concepts.
+                        </p>
+                        <div class="feature-tags">
+                            <span>Linux</span>
+                            <span>OSI / TCP-IP</span>
+                            <span>Defense</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Practice -->
+                    <div class="feature-card reveal" data-delay="200">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Practice</h3>
+                        <p class="feature-text">
+                            Hands-on labs, Hack The Box, penetration testing environments and practical security incident exercises.
+                        </p>
+                        <div class="feature-tags">
+                            <span>Hack The Box</span>
+                            <span>Live Labs</span>
+                            <span>Exploitation</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Compete -->
+                    <div class="feature-card reveal" data-delay="300">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                <line x1="4" y1="22" x2="4" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Compete</h3>
+                        <p class="feature-text">
+                            CTFs, university tournaments, cybersecurity challenges, and national collegiate hacking competitions.
+                        </p>
+                        <div class="feature-tags">
+                            <span>CTF Time</span>
+                            <span>Rankings</span>
+                            <span>Puzzles</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Certify -->
+                    <div class="feature-card reveal" data-delay="400">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Certify</h3>
+                        <p class="feature-text">
+                            Prepare for international certifications from leading industry vendors including Cisco Systems and Fortinet.
+                        </p>
+                        <div class="feature-tags">
+                            <span>CCNA 200-301</span>
+                            <span>Fortinet NSE</span>
+                            <span>CyberOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             INDUSTRY PARTNERS SECTION
+        ========================================================== -->
+        <section class="section partners-section" id="partners">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">INDUSTRY COLLABORATION</span>
+                    <h2 class="section-title">Global technology.<br>Within your reach.</h2>
+                    <p class="section-desc">
+                        Bridging academic theory with globally recognized cybersecurity curricula, enterprise hardware, and vendor learning academies.
+                    </p>
+                </div>
+
+                <div class="grid grid-3 partners-grid">
+                    <!-- Partner 1: Fortinet -->
+                    <div class="partner-card card-glow-fortinet reveal" data-delay="100">
+                        <div class="partner-card-header">
+                            <div class="partner-logo-frame">
+                                <svg class="partner-logo" viewBox="346 867 2308 266" role="img" aria-label="Fortinet" preserveAspectRatio="xMidYMid meet">
+                                    <image href="assets/Fortinet-Logo.wine.png" width="3000" height="2000" />
+                                </svg>
+                            </div>
+                            <span class="badge badge-partner-active">Academic Partner</span>
+                        </div>
+                        <h3 class="partner-name">Fortinet</h3>
+                        <p class="partner-desc">
+                            Access cybersecurity training, structured certification pathways and academic resources through the Fortinet Academic Partner ecosystem.
+                        </p>
+                        <ul class="partner-highlights">
+                            <li><span class="check-icon">✓</span> Official NSE 1 – 8 Program Pathways</li>
+                            <li><span class="check-icon">✓</span> Next-Generation Firewall (FortiGate) Labs</li>
+                            <li><span class="check-icon">✓</span> Certification Exam Opportunities</li>
+                        </ul>
+                        <a href="#fortinet" class="partner-link">Explore Fortinet Track &rarr;</a>
+                    </div>
+
+                    <!-- Partner 2: Cisco -->
+                    <div class="partner-card card-glow-cisco reveal" data-delay="200">
+                        <div class="partner-card-header">
+                            <div class="partner-logo-frame">
+                                <svg class="partner-logo" viewBox="0 0 500 264" role="img" aria-label="Cisco" preserveAspectRatio="xMidYMid meet">
+                                    <image href="assets/cisco-logo.png" width="500" height="264" />
+                                </svg>
+                            </div>
+                            <span class="badge badge-partner-active">Networking Academy</span>
+                        </div>
+                        <h3 class="partner-name">Cisco</h3>
+                        <p class="partner-desc">
+                            Cisco networking and cybersecurity learning opportunities available through the world-renowned Cisco Networking Academy.
+                        </p>
+                        <ul class="partner-highlights">
+                            <li><span class="check-icon">✓</span> Complete CCNA 200-301 Curriculum</li>
+                            <li><span class="check-icon">✓</span> Instructor-Led Learning by E-JUST Students</li>
+                            <li><span class="check-icon">✓</span> Up to 68% Certification Discount Eligibility</li>
+                        </ul>
+                        <a href="#cisco" class="partner-link">Explore Cisco Track &rarr;</a>
+                    </div>
+
+                    <!-- Partner 3: Palo Alto Networks -->
+                    <div class="partner-card card-glow-palo reveal" data-delay="300">
+                        <div class="partner-card-header">
+                            <div class="partner-logo-frame">
+                                <svg class="partner-logo" viewBox="6 0 3824 703" role="img" aria-label="Palo Alto Networks" preserveAspectRatio="xMidYMid meet">
+                                    <image href="assets/paloalto-logo.png" width="3840" height="703" />
+                                </svg>
+                            </div>
+                            <span class="badge badge-partner-progress">Partnership in Progress</span>
+                        </div>
+                        <h3 class="partner-name">Palo Alto Networks</h3>
+                        <p class="partner-desc">
+                            We are currently working to expand the club's cybersecurity industry partnerships to integrate Palo Alto Networks cybersecurity curriculum.
+                        </p>
+                        <div class="partner-notice-box">
+                            <p class="partner-notice-text">
+                                We aim to continue building relationships with leading global cybersecurity vendors.
+                            </p>
+                        </div>
+                        <span class="partner-link disabled-link">Expansion in Progress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             FORTINET SECTION
+        ========================================================== -->
+        <section class="section fortinet-section" id="fortinet">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="brand-tag fortinet-tag">
+                        <span class="fortinet-dot"></span> FORTINET ACADEMIC PARTNER
+                    </div>
+                    <h2 class="section-title">Fortinet Academic Partner</h2>
+                    <p class="section-desc">
+                        From cybersecurity fundamentals to advanced enterprise security. Follow the official Network Security Expert (NSE) pathway.
+                    </p>
+                </div>
+
+                <div class="fortinet-layout">
+                    <!-- Interactive NSE Accordion -->
+                    <div class="nse-container reveal">
+                        <div class="nse-header-bar">
+                            <span class="nse-icon" aria-hidden="true">↳</span>
+                            <span class="nse-title">NSE 1–8 / Explore the learning pathway</span>
+                        </div>
+
+                        <div class="accordion" id="nse-accordion">
+                            <!-- NSE 1 -->
+                            <div class="accordion-item active">
+                                <button class="accordion-trigger" aria-expanded="true">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 1</span>
+                                        <span class="trigger-name">Information Security Awareness</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Cybersecurity fundamentals and threat landscape overview. Understand social engineering, phishing, malware vectors, password security, and foundational digital hygiene.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">Fundamentals</span>
+                                            <span class="tech-tag">Threat Vectors</span>
+                                            <span class="tech-tag">Security Hygiene</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 2 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 2</span>
+                                        <span class="trigger-name">The Evolution of Cybersecurity</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Cybersecurity concepts and security technologies. Learn how enterprise security evolved to combat modern multi-vector attacks, ransomware, and zero-day vulnerabilities.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">Next-Gen Defense</span>
+                                            <span class="tech-tag">Zero Trust</span>
+                                            <span class="tech-tag">Cloud Defense</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 3 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 3</span>
+                                        <span class="trigger-name">Fortinet Security Technologies</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Fortinet security technologies and FortiGate fundamentals. Explore Fortinet Security Fabric architecture and comprehensive enterprise cybersecurity solutions.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">FortiGate</span>
+                                            <span class="tech-tag">Security Fabric</span>
+                                            <span class="tech-tag">Solutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 4 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 4</span>
+                                        <span class="trigger-name">FortiOS & Firewall Administration</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>FortiOS administration and firewall technologies. Hands-on configuration of routing, firewall policies, SSL inspection, IPsec VPNs, authentication, and security profiles.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">FortiOS</span>
+                                            <span class="tech-tag">Firewall Policies</span>
+                                            <span class="tech-tag">IPsec / SSL VPN</span>
+                                            <span class="tech-tag">IPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 5 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 5</span>
+                                        <span class="trigger-name">Security Specialization Tracks</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Specialized enterprise security tracks. Deep dives into network security management, centralized logging, and analytics across major enterprise domains:</p>
+                                        <ul class="nse-bullet-list">
+                                            <li><strong>Secure Networking:</strong> Advanced FortiGate routing & switching architectures</li>
+                                            <li><strong>Security Operations:</strong> FortiAnalyzer & FortiSIEM threat intelligence</li>
+                                            <li><strong>Cloud Security:</strong> Fortinet multi-cloud architectures (AWS, Azure)</li>
+                                            <li><strong>SASE:</strong> Secure Access Service Edge and Zero Trust Network Access (ZTNA)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 6 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 6</span>
+                                        <span class="trigger-name">Advanced Administration & Engineering</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Advanced administration and engineering across Fortinet products: FortiWeb (WAF), FortiMail, FortiSwitch, FortiAP wireless security, and endpoint detection.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">FortiWeb</span>
+                                            <span class="tech-tag">FortiMail</span>
+                                            <span class="tech-tag">FortiSwitch</span>
+                                            <span class="tech-tag">EDR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 7 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 7</span>
+                                        <span class="trigger-name">Advanced Architecture & Enterprise Security</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Advanced architecture, high-availability deployments, and enterprise security troubleshooting. Designing resilient, large-scale multi-site security infrastructures.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">Enterprise Architecture</span>
+                                            <span class="tech-tag">High Availability</span>
+                                            <span class="tech-tag">Troubleshooting</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NSE 8 -->
+                            <div class="accordion-item">
+                                <button class="accordion-trigger" aria-expanded="false">
+                                    <div class="trigger-left">
+                                        <span class="nse-badge">NSE 8</span>
+                                        <span class="trigger-name">Fortinet Certified Expert</span>
+                                    </div>
+                                    <span class="accordion-arrow"></span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="content-body">
+                                        <p>Expert-level cybersecurity knowledge. The highest credential demonstrating comprehensive mastery of network security design, configuration, and troubleshooting in complex scenarios.</p>
+                                        <div class="tag-row">
+                                            <span class="tech-tag">Elite Level</span>
+                                            <span class="tech-tag">Practical Lab Exam</span>
+                                            <span class="tech-tag">Global Benchmark</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Card: E-JUST Student Advantage -->
+                    <div class="advantage-card reveal">
+                        <div class="advantage-header">
+                            <span class="shield-badge">E-JUST ADVANTAGE</span>
+                            <h3 class="advantage-title">E-JUST Student Advantage</h3>
+                            <p class="advantage-subtitle">Possible benefits through the Fortinet Academic Partner ecosystem:</p>
+                        </div>
+                        <ul class="advantage-list">
+                            <li>
+                                <div class="list-bullet">01</div>
+                                <div class="list-content">
+                                    <strong>Official Training</strong>
+                                    <span>Authorized Fortinet curriculum developed directly by cybersecurity industry leaders.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-bullet">02</div>
+                                <div class="list-content">
+                                    <strong>Structured Certification Pathway</strong>
+                                    <span>Clear progression roadmap starting at entry level up to advanced enterprise engineering.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-bullet">03</div>
+                                <div class="list-content">
+                                    <strong>Cybersecurity Learning Resources</strong>
+                                    <span>Access to official courseware, reference architectures, and vendor documentation.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-bullet">04</div>
+                                <div class="list-content">
+                                    <strong>Hands-on Training</strong>
+                                    <span>Practical virtual lab simulations and configuration of real enterprise firewall rules.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-bullet">05</div>
+                                <div class="list-content">
+                                    <strong>Exam Voucher Opportunities</strong>
+                                    <span>Potential certification exam discount vouchers for eligible high-achieving students.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="disclaimer-box">
+                            <span class="disclaimer-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg></span>
+                            <p class="disclaimer-text">
+                                <strong>Disclaimer:</strong> Certification exams, vouchers and eligibility depend on Fortinet program requirements and criteria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CISCO SECTION
+        ========================================================== -->
+        <section class="section cisco-section" id="cisco">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="brand-tag cisco-tag">
+                        <span class="cisco-dot"></span> CISCO NETWORKING ACADEMY
+                    </div>
+                    <h2 class="section-title">Cisco Networking Academy<br>at E&#8209;JUST</h2>
+                    <p class="section-desc">
+                        Students can build networking and cybersecurity skills through Cisco Networking Academy learning paths, supported by peer leadership and certified guidance.
+                    </p>
+                </div>
+
+                <!-- Instructor Card (Balanced with Club Prominence) -->
+                <div class="instructor-container reveal">
+                    <div class="instructor-card">
+                        <div class="instructor-image-col">
+                            <div class="instructor-img-frame">
+                                <img src="assets/ahmed-mesbah.jpg" alt="Portrait placeholder for Ahmed Mesbah" loading="lazy" class="instructor-img">
+                                <div class="instructor-glow"></div>
+                            </div>
+                            <span class="instructor-badge">Student instructor</span>
+                        </div>
+                        <div class="instructor-info-col">
+                            <span class="instructor-role-tag">ACADEMY INSTRUCTOR &amp; PEER MENTOR</span>
+                            <h3 class="instructor-name">Ahmed Mesbah</h3>
+                            <h4 class="instructor-title">Cisco Networking Academy Instructor</h4>
+                            <div class="instructor-meta">
+                                <span class="meta-item">Cyber Security &amp; Networks Student</span>
+                                <span class="meta-separator">•</span>
+                                <span class="meta-item">4th Year</span>
+                                <span class="meta-separator">•</span>
+                                <span class="meta-item">Egypt-Japan University of Science and Technology</span>
+                            </div>
+                            <p class="instructor-bio">
+                                Learn networking and cybersecurity with support from a Cisco Networking Academy instructor who is also an E-JUST Cyber Security student. Gain practical lab experience, packet analysis methods, and guided certification mentorship straight from someone walking the same university journey.
+                            </p>
+                            <div class="instructor-skills">
+                                <span class="skill-chip">Cisco NetAcad</span>
+                                <span class="skill-chip">CCNA / CCNP Prep</span>
+                                <span class="skill-chip">Packet Tracer</span>
+                                <span class="skill-chip">Network Security</span>
+                                <span class="skill-chip">E-JUST CSN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CCNA SECTION
+        ========================================================== -->
+        <section class="section ccna-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">CORE CURRICULUM</span>
+                    <h2 class="section-title">Start With CCNA</h2>
+                    <p class="section-desc">
+                        The gold standard in computer networking. Master the foundational knowledge required for every cybersecurity domain.
+                    </p>
+                </div>
+
+                <div class="grid grid-3 ccna-grid">
+                    <!-- CCNA 1: ITN -->
+                    <div class="course-card reveal" data-delay="100">
+                        <div class="course-badge">MODULE 1</div>
+                        <h3 class="course-code">ITN</h3>
+                        <h4 class="course-name">Introduction to Networks</h4>
+                        <p class="course-summary">
+                            Build fundamental understanding of how data travels across local and global networks.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topics-label">Key Topics:</span>
+                            <ul>
+                                <li>Networking fundamentals</li>
+                                <li>IPv4 &amp; Subnetting</li>
+                                <li>IPv6 Addressing</li>
+                                <li>Ethernet &amp; Media Access</li>
+                                <li>Network devices &amp; Topologies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CCNA 2: SRWE -->
+                    <div class="course-card reveal" data-delay="200">
+                        <div class="course-badge">MODULE 2</div>
+                        <h3 class="course-code">SRWE</h3>
+                        <h4 class="course-name">Switching, Routing &amp; Wireless Essentials</h4>
+                        <p class="course-summary">
+                            Configure switches, routers, and secure enterprise small-to-medium networks.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topics-label">Key Topics:</span>
+                            <ul>
+                                <li>VLANs &amp; Inter-VLAN Routing</li>
+                                <li>Spanning Tree Protocol (STP)</li>
+                                <li>Routing Concepts &amp; Static Routes</li>
+                                <li>Wireless LAN Configuration</li>
+                                <li>Layer 2 Network Security</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CCNA 3: ENSA -->
+                    <div class="course-card reveal" data-delay="300">
+                        <div class="course-badge">MODULE 3</div>
+                        <h3 class="course-code">ENSA</h3>
+                        <h4 class="course-name">Enterprise Networking, Security &amp; Automation</h4>
+                        <p class="course-summary">
+                            Scale complex enterprise networks with security protocols and network programmability.
+                        </p>
+                        <div class="course-topics">
+                            <span class="topics-label">Key Topics:</span>
+                            <ul>
+                                <li>Enterprise networking concepts</li>
+                                <li>Single-Area OSPFv2</li>
+                                <li>WAN Technologies &amp; IPsec VPNs</li>
+                                <li>Network Security &amp; ACLs</li>
+                                <li>Network Automation &amp; REST APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CCNA Voucher Highlight Card -->
+                <div class="voucher-card reveal">
+                    <div class="voucher-left">
+                        <div class="voucher-tag">CERTIFICATION EXAM INCENTIVE</div>
+                        <h3 class="voucher-title">Cisco CCNA 200-301</h3>
+                        <p class="voucher-text">
+                            Potential Cisco Networking Academy certification exam discount for eligible students after completing Cisco course requirements.
+                        </p>
+                        <div class="voucher-disclaimer">
+                            <small><strong>Note:</strong> Eligibility depends on Cisco Networking Academy requirements, scoring thresholds, and active voucher policies.</small>
+                        </div>
+                    </div>
+                    <div class="voucher-right">
+                        <div class="discount-circle">
+                            <div class="counter-val" id="ccna-discount-counter" data-target="68">68</div>
+                            <span class="percent-symbol">%</span>
+                            <span class="discount-sub">DISCOUNT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CCNP SECTION
+        ========================================================== -->
+        <section class="section ccnp-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">ADVANCED TRACK</span>
+                    <h2 class="section-title">Go Beyond CCNA</h2>
+                    <p class="section-desc">
+                        Elevate your engineering expertise with professional-level enterprise networking and infrastructure security.
+                    </p>
+                </div>
+
+                <!-- Visual Progression Pipeline -->
+                <div class="pipeline-wrapper reveal">
+                    <div class="pipeline-step">
+                        <span class="step-num">01</span>
+                        <span class="step-label">CCNA</span>
+                    </div>
+                    <div class="pipeline-arrow">&rarr;</div>
+                    <div class="pipeline-step active-step">
+                        <span class="step-num">02</span>
+                        <span class="step-label">CCNP Enterprise</span>
+                    </div>
+                    <div class="pipeline-arrow">&rarr;</div>
+                    <div class="pipeline-step">
+                        <span class="step-num">03</span>
+                        <span class="step-label">Advanced Networking</span>
+                    </div>
+                    <div class="pipeline-arrow">&rarr;</div>
+                    <div class="pipeline-step">
+                        <span class="step-num">04</span>
+                        <span class="step-label">Network Security</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-2 ccnp-grid">
+                    <!-- ENCOR -->
+                    <div class="ccnp-card reveal" data-delay="100">
+                        <div class="ccnp-card-header">
+                            <span class="exam-code">350-401 ENCOR</span>
+                            <span class="badge badge-accent">Core Exam</span>
+                        </div>
+                        <h3 class="ccnp-name">Core Enterprise Networking Technologies</h3>
+                        <p class="ccnp-desc">
+                            Validates candidate knowledge of enterprise network core infrastructure, architecture, security, and assurance.
+                        </p>
+                        <div class="ccnp-topic-grid">
+                            <div class="topic-item">Architecture</div>
+                            <div class="topic-item">Virtualization</div>
+                            <div class="topic-item">Infrastructure</div>
+                            <div class="topic-item">Network Assurance</div>
+                            <div class="topic-item">Security</div>
+                            <div class="topic-item">Automation</div>
+                        </div>
+                    </div>
+
+                    <!-- ENARSI -->
+                    <div class="ccnp-card reveal" data-delay="200">
+                        <div class="ccnp-card-header">
+                            <span class="exam-code">300-410 ENARSI</span>
+                            <span class="badge badge-accent">Concentration Exam</span>
+                        </div>
+                        <h3 class="ccnp-name">Advanced Routing and Services</h3>
+                        <p class="ccnp-desc">
+                            Demonstrates mastery of installing, configuring, operating, and troubleshooting enterprise networks.
+                        </p>
+                        <div class="ccnp-topic-grid">
+                            <div class="topic-item">Advanced Routing</div>
+                            <div class="topic-item">Layer 3 VPN Services</div>
+                            <div class="topic-item">Infrastructure Security</div>
+                            <div class="topic-item">Complex Troubleshooting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CISCO OTHER LEARNING PATHS
+        ========================================================== -->
+        <section class="section other-paths-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">SPECIALIZED DOMAINS</span>
+                    <h2 class="section-title">Cisco Specialized Learning Paths</h2>
+                    <p class="section-desc">
+                        Explore specialized cybersecurity, operational technology, and modern software-defined networking disciplines.
+                    </p>
+                </div>
+
+                <div class="grid grid-paths">
+                    <!-- Path 1 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"/><path d="m8 12 3 3 5-6"/></svg></div>
+                        <h3 class="path-title">CyberOps</h3>
+                        <p class="path-text">Security Operations Centers (SOC), incident analysis, threat monitoring, and defensive cybersecurity.</p>
+                    </div>
+
+                    <!-- Path 2 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 4v3"/></svg></div>
+                        <h3 class="path-title">Network Security</h3>
+                        <p class="path-text">Next-gen firewalls, secure site-to-site VPNs, AAA access controls, and defense-in-depth architecture.</p>
+                    </div>
+
+                    <!-- Path 3 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 3-1 3-3 1 1 3-2 2 2 2-1 3 3 1 1 3h6l1-3 3-1-1-3 2-2-2-2 1-3-3-1-1-3z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h3 class="path-title">DevNet</h3>
+                        <p class="path-text">Network programmability, Python automation scripts, REST APIs, and CI/CD for infrastructure.</p>
+                    </div>
+
+                    <!-- Path 4 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l6 3V8l6 4V3h4l2 18zm3-4h1m4 0h1m4 0h1"/></svg></div>
+                        <h3 class="path-title">Industrial Networking</h3>
+                        <p class="path-text">Mission-critical industrial Ethernet, factory automation networks, and harsh environment protocols.</p>
+                    </div>
+
+                    <!-- Path 5 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-7z"/></svg></div>
+                        <h3 class="path-title">Industrial Cybersecurity</h3>
+                        <p class="path-text">Operational Technology (OT) protection, SCADA/ICS security hardening, and Purdue model frameworks.</p>
+                    </div>
+
+                    <!-- Path 6 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg></div>
+                        <h3 class="path-title">IoT</h3>
+                        <p class="path-text">Smart sensor networks, edge compute gateways, IoT telemetry, and connected device security.</p>
+                    </div>
+
+                    <!-- Path 7 -->
+                    <div class="path-card reveal">
+                        <div class="path-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h1m4 0h1M9 11h1m4 0h1m-6 4h1m4 0h1m-5 6v-3h4v3"/></svg></div>
+                        <h3 class="path-title">Data Center</h3>
+                        <p class="path-text">High-density spine-leaf fabrics, VXLAN, storage networking, and hybrid cloud data center technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CLUB ACTIVITIES SECTION
+        ========================================================== -->
+        <section class="section activities-section" id="activities">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">HANDS-ON LEARNING</span>
+                    <h2 class="section-title">Theory meets<br>hands-on experience.</h2>
+                    <p class="section-desc">
+                        No boring slide-reading. We build deep technical capability through live command line execution, packet capture, and controlled offensive exercises.
+                    </p>
+                </div>
+
+                <div class="activities-grid">
+                    <!-- Activity 1: Linux -->
+                    <div class="activity-card reveal">
+                        <div class="activity-card-header">
+                            <div class="activity-title-group">
+                                <span class="activity-icon" aria-hidden="true">01</span>
+                                <h3>Linux Systems &amp; Administration</h3>
+                            </div>
+                        </div>
+                        <div class="activity-body">
+                            <p class="activity-desc">
+                                Master the operating system that runs the modern internet, cloud infrastructure, and security tooling.
+                            </p>
+                            <div class="topics-tag-cloud">
+                                <span>Linux Fundamentals</span>
+                                <span>Bash Scripting</span>
+                                <span>Filesystem Hierarchy</span>
+                                <span>Permissions &amp; ACLs</span>
+                                <span>Processes &amp; Daemons</span>
+                                <span>Systemd Services</span>
+                                <span>Linux Networking</span>
+                                <span>Hardening &amp; Security</span>
+                            </div>
+
+                            <!-- Interactive Typing Terminal -->
+                            <div class="terminal-window">
+                                <div class="terminal-bar">
+                                    <div class="term-dots">
+                                        <span class="term-dot dot-red"></span>
+                                        <span class="term-dot dot-yellow"></span>
+                                        <span class="term-dot dot-green"></span>
+                                    </div>
+                                    <span class="terminal-title">student@ejust-cyber-lab:~</span>
+                                </div>
+                                <div class="terminal-screen" id="linux-terminal">
+                                    <div class="term-line"><span class="term-prompt">student@ejust:~$</span> <span id="type-cmd-1">whoami</span><span class="term-cursor" id="cursor-1"></span></div>
+                                    <div class="term-line term-output" id="type-out-1">cyber-security-student</div>
+                                    <div class="term-line" id="term-row-2"><span class="term-prompt">student@ejust:~$</span> <span id="type-cmd-2">sudo learn linux</span><span class="term-cursor" id="cursor-2"></span></div>
+                                    <div class="term-line term-success" id="type-out-2">[✓] Loading cybersecurity skills... [Ready]</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 2: Networking -->
+                    <div class="activity-card reveal">
+                        <div class="activity-card-header">
+                            <div class="activity-title-group">
+                                <span class="activity-icon" aria-hidden="true">02</span>
+                                <h3>Computer Networking &amp; Architecture</h3>
+                            </div>
+                        </div>
+                        <div class="activity-body">
+                            <p class="activity-desc">
+                                You cannot defend what you don't understand. Master packet transmission, protocol analysis, and enterprise switching.
+                            </p>
+                            <div class="topics-tag-cloud">
+                                <span>TCP/IP Stack</span>
+                                <span>OSI 7 Layers</span>
+                                <span>VLANs &amp; Trunks</span>
+                                <span>Dynamic Routing</span>
+                                <span>Switching Logic</span>
+                                <span>DNS &amp; DHCP</span>
+                                <span>Stateful Firewalls</span>
+                                <span>IPsec VPN</span>
+                                <span>Wireshark PCAP</span>
+                            </div>
+
+                            <!-- Animated CSS Network Topology -->
+                            <div class="topology-container">
+                                <div class="topology-node node-client">
+                                    <div class="node-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="12" rx="1"/><path d="m5 15-3 5h20l-3-5M9 18h6"/></svg></div>
+                                    <span>Client PC</span>
+                                </div>
+                                <div class="topology-link link-1">
+                                    <div class="packet packet-1"></div>
+                                </div>
+                                <div class="topology-node node-switch">
+                                    <div class="node-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h4l10 12h4m-4-4 4 4-4 4M3 18h4l10-12h4m-4-4 4 4-4 4"/></svg></div>
+                                    <span>Switch (VLAN 10)</span>
+                                </div>
+                                <div class="topology-link link-2">
+                                    <div class="packet packet-2"></div>
+                                </div>
+                                <div class="topology-node node-router">
+                                    <div class="node-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6z"/><path d="m8 12 3 3 5-6"/></svg></div>
+                                    <span>Firewall/Router</span>
+                                </div>
+                                <div class="topology-link link-3">
+                                    <div class="packet packet-3"></div>
+                                </div>
+                                <div class="topology-node node-server">
+                                    <div class="node-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18a5 5 0 0 1-1-10 7 7 0 0 1 13-1 5.5 5.5 0 0 1 0 11z"/></svg></div>
+                                    <span>Cloud Server</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 3: Ethical Hacking -->
+                    <div class="activity-card reveal">
+                        <div class="activity-card-header">
+                            <div class="activity-title-group">
+                                <span class="activity-icon" aria-hidden="true">03</span>
+                                <h3>Ethical Hacking &amp; Vulnerability Assessment</h3>
+                            </div>
+                            <span class="badge badge-authorized">Authorized Environments Only</span>
+                        </div>
+                        <div class="activity-body">
+                            <p class="activity-desc">
+                                Learn the mindset of adversaries to effectively fortify university and enterprise defenses under strict codes of ethics.
+                            </p>
+                            <div class="topics-tag-cloud">
+                                <span>Reconnaissance</span>
+                                <span>Active Enumeration</span>
+                                <span>Vulnerability Discovery</span>
+                                <span>Web App Security (OWASP)</span>
+                                <span>Network Attacks</span>
+                                <span>Privilege Escalation</span>
+                                <span>Executive Reporting</span>
+                            </div>
+                            <div class="ethical-notice">
+                                <span class="notice-icon"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18m-5 0h10M4 7h16M4 7l-3 7h6zm16 0-3 7h6z"/></svg></span>
+                                <span>All offensive techniques are practiced exclusively within legal, isolated, authorized virtual sandboxes.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 4: Penetration Testing Attack Lifecycle -->
+                    <div class="activity-card reveal">
+                        <div class="activity-card-header">
+                            <div class="activity-title-group">
+                                <span class="activity-icon" aria-hidden="true">04</span>
+                                <h3>Penetration Testing Methodology</h3>
+                            </div>
+                        </div>
+                        <div class="activity-body">
+                            <p class="activity-desc">
+                                The industry standard 7-phase penetration testing lifecycle applied in professional security engagements:
+                            </p>
+
+                            <!-- Visual Attack Lifecycle -->
+                            <div class="lifecycle-timeline" id="lifecycle-timeline">
+                                <button type="button" class="lifecycle-step active" aria-pressed="true">
+                                    <div class="step-bubble">1</div>
+                                    <div class="step-text">
+                                        <strong>Recon</strong>
+                                        <small>OSINT &amp; Passive Data</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">2</div>
+                                    <div class="step-text">
+                                        <strong>Enumeration</strong>
+                                        <small>Port &amp; Service Mapping</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">3</div>
+                                    <div class="step-text">
+                                        <strong>Vuln Analysis</strong>
+                                        <small>Flaw Identification</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">4</div>
+                                    <div class="step-text">
+                                        <strong>Exploitation</strong>
+                                        <small>Gaining Access</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">5</div>
+                                    <div class="step-text">
+                                        <strong>Priv Escalation</strong>
+                                        <small>Root / Admin Privs</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">6</div>
+                                    <div class="step-text">
+                                        <strong>Post Exploitation</strong>
+                                        <small>Persistence &amp; Lateral</small>
+                                    </div>
+                                </button>
+                                <button type="button" class="lifecycle-step" aria-pressed="false">
+                                    <div class="step-bubble">7</div>
+                                    <div class="step-text">
+                                        <strong>Reporting</strong>
+                                        <small>Remediation Steps</small>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             HACK THE BOX SECTION
+        ========================================================== -->
+        <section class="section htb-section">
+            <div class="container">
+                <div class="htb-wrapper reveal">
+                    <div class="htb-glow"></div>
+                    <div class="htb-header-row">
+                        <div class="htb-brand-group">
+                            <span class="htb-cube"><svg class="mono-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5v10l-9 5-9-5V7zm0 10v10M3 7l9 5 9-5"/></svg></span>
+                            <div>
+                                <span class="htb-badge">HANDS-ON LAB PLATFORM</span>
+                                <h2 class="htb-title">Learn by Doing</h2>
+                            </div>
+                        </div>
+                        <p class="htb-subtitle">
+                            Practice real cybersecurity skills through controlled and legal environments.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-2 htb-content-grid">
+                        <div class="htb-info-col">
+                            <p class="htb-body-p">
+                                We utilize top training platforms such as <strong>Hack The Box</strong> to expose club members to realistic target environments: vulnerable services, misconfigured active directories, unpatched web apps, and modern privilege escalation scenarios.
+                            </p>
+                            <div class="htb-skill-boxes">
+                                <div class="skill-box">
+                                    <span class="skill-box-title">Linux Internals</span>
+                                    <span>Kernel exploits, SUID binaries, cron exploitation</span>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="skill-box-title">Windows &amp; Active Directory</span>
+                                    <span>Kerberoasting, BloodHound, DCSync, Domain dominance</span>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="skill-box-title">Web Exploitation</span>
+                                    <span>SQL Injection, SSRF, IDOR, Remote Code Execution</span>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="skill-box-title">Misconfigurations</span>
+                                    <span>Weak credentials, open NFS/SMB shares, API leaks</span>
+                                </div>
+                            </div>
+                            <p class="htb-disclaimer">
+                                <small>* Hack The Box is referenced as an industry-standard educational platform. Activities adhere strictly to platform terms and university policy.</small>
+                            </p>
+                        </div>
+
+                        <!-- Terminal-Inspired Practice Card -->
+                        <div class="htb-terminal-card">
+                            <div class="htb-term-header">
+                                <span class="terminal-bullet"></span>
+                                <span>htb-lab-terminal — vpn-connected: ejust-tun0</span>
+                            </div>
+                            <div class="htb-term-content">
+                                <p class="code-line"><span class="c-green">ejust@box:~$</span> openvpn ejust-cyber-club.ovpn</p>
+                                <p class="code-line c-dim">[+] Initialization Sequence Completed. IP: 10.10.14.85</p>
+                                <p class="code-line"><span class="c-green">ejust@box:~$</span> nmap -sC -sV -Pn 10.129.201.42</p>
+                                <p class="code-line c-cyan">PORT     STATE SERVICE VERSION</p>
+                                <p class="code-line c-dim">22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu</p>
+                                <p class="code-line c-dim">80/tcp   open  http    Apache httpd 2.4.52</p>
+                                <p class="code-line c-dim">88/tcp   open  kerberos-sec Microsoft Windows</p>
+                                <p class="code-line c-dim">389/tcp  open  ldap    Microsoft Windows Active Directory</p>
+                                <p class="code-line"><span class="c-green">ejust@box:~$</span> ./pwn_challenge --flag</p>
+                                <p class="code-line c-yellow">[+] User Flag Captured: HTB{ejust_cyber_warrior_flag_77}</p>
+                                <p class="code-line c-green">[+] System Root Compromised: 100% Solved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CTF SECTION
+        ========================================================== -->
+        <section class="section ctf-section" id="ctf">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="ctf-terminal-badge">
+                        <code>root@ejust:~# capture_the_flag</code>
+                    </div>
+                    <h2 class="section-title">Capture The Flag</h2>
+                    <p class="section-desc">
+                        Solve cybersecurity challenges, compete with other students and develop real problem-solving skills under tournament pressure.
+                    </p>
+                </div>
+
+                <!-- 8 CTF Category Cards -->
+                <div class="ctf-categories-grid">
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">01</span>
+                        <h4 class="cat-name">Web Exploitation</h4>
+                        <p class="cat-desc">SQLi, XSS, SSRF, JWT bypass, CSRF, and prototype pollution.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">02</span>
+                        <h4 class="cat-name">Cryptography</h4>
+                        <p class="cat-desc">RSA, AES, elliptic curves, discrete logs, and hashing flaws.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">03</span>
+                        <h4 class="cat-name">Digital Forensics</h4>
+                        <p class="cat-desc">Memory dumps (Volatility), PCAP packet tracing, file carving.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">04</span>
+                        <h4 class="cat-name">Reverse Engineering</h4>
+                        <p class="cat-desc">Ghidra, IDA Pro, x86/x64 assembly disassembly, and patch analysis.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">05</span>
+                        <h4 class="cat-name">OSINT</h4>
+                        <p class="cat-desc">Open-source intelligence, geolocation, darkweb investigation.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">06</span>
+                        <h4 class="cat-name">Network Security</h4>
+                        <p class="cat-desc">Protocol decoding, rogue DHCP detection, and firewall bypass.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">07</span>
+                        <h4 class="cat-name">Binary Exploitation (Pwn)</h4>
+                        <p class="cat-desc">Buffer overflows, ROP chains, format strings, shellcoding.</p>
+                    </div>
+
+                    <div class="ctf-cat-card reveal">
+                        <span class="cat-icon" aria-hidden="true">08</span>
+                        <h4 class="cat-name">Steganography</h4>
+                        <p class="cat-desc">Hidden data inside images, audio waveforms, and metadata tags.</p>
+                    </div>
+                </div>
+
+                <!-- 3 Event Types -->
+                <div class="ctf-events-row">
+                    <div class="event-card reveal">
+                        <div class="event-header">
+                            <span class="event-type-badge">TIER 1</span>
+                            <h3>Internal CTF</h3>
+                        </div>
+                        <p class="event-desc">
+                            Club-exclusive competitions designed to test recent workshop topics, foster peer mentorship, and discover emerging university talent.
+                        </p>
+                    </div>
+
+                    <div class="event-card reveal">
+                        <div class="event-header">
+                            <span class="event-type-badge">TIER 2</span>
+                            <h3>University Competitions</h3>
+                        </div>
+                        <p class="event-desc">
+                            Inter-university challenges where E-JUST students compete directly against other universities across Egypt and the MENA region.
+                        </p>
+                    </div>
+
+                    <div class="event-card reveal">
+                        <div class="event-header">
+                            <span class="event-type-badge">TIER 3</span>
+                            <h3>National &amp; International CTFs</h3>
+                        </div>
+                        <p class="event-desc">
+                            Represent E-JUST in premier global tournaments on CTFtime, DEF CON qualifiers, and international cybersecurity leagues.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Live Scoreboard Mock UI -->
+                <div class="scoreboard-container reveal">
+                    <div class="scoreboard-header">
+                        <div class="score-title-group">
+                            <span class="live-dot"></span>
+                            <h4>E-JUST Cyber Invitational — Sample Scoreboard</h4>
+                        </div>
+                        <div class="score-meta">
+                            <span>DEMO · NOT LIVE RESULTS</span>
+                        </div>
+                    </div>
+                    <div class="scoreboard-table-wrapper">
+                        <table class="scoreboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team / Handle</th>
+                                    <th>Affiliation</th>
+                                    <th>Solves</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rank-1">
+                                    <td><span class="rank-badge gold">#1</span></td>
+                                    <td><strong>NullByte_EJUST</strong></td>
+                                    <td>E-JUST Cyber Club</td>
+                                    <td><span class="solves-pill">18 Flags</span></td>
+                                    <td><span class="score-val">2,450 pts</span></td>
+                                </tr>
+                                <tr class="rank-2">
+                                    <td><span class="rank-badge silver">#2</span></td>
+                                    <td><strong>Kernel_Panic_Sec</strong></td>
+                                    <td>CSN 4th Year</td>
+                                    <td><span class="solves-pill">16 Flags</span></td>
+                                    <td><span class="score-val">2,100 pts</span></td>
+                                </tr>
+                                <tr class="rank-3">
+                                    <td><span class="rank-badge bronze">#3</span></td>
+                                    <td><strong>Samurai_Defenders</strong></td>
+                                    <td>E-JUST CSN</td>
+                                    <td><span class="solves-pill">14 Flags</span></td>
+                                    <td><span class="score-val">1,850 pts</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="rank-badge">#4</span></td>
+                                    <td><strong>Packet_Stormers</strong></td>
+                                    <td>E-JUST Cyber Club</td>
+                                    <td><span class="solves-pill">12 Flags</span></td>
+                                    <td><span class="score-val">1,500 pts</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             CYBERSECURITY ROADMAP
+        ========================================================== -->
+        <section class="section roadmap-section" id="roadmap">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">STRUCTURED GROWTH</span>
+                    <h2 class="section-title">Your next step.<br>And the one after that.</h2>
+                    <p class="section-desc">
+                        A battle-tested 7-stage pathway designed to transform dedicated university students into high-demand cybersecurity professionals.
+                    </p>
+                </div>
+
+                <div class="roadmap-timeline">
+                    <!-- Step 1 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">1</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 01</span>
+                            <h3 class="node-title">Foundation</h3>
+                            <p class="node-desc">Master the essential computer science fundamentals before attacking or defending.</p>
+                            <div class="node-tags">
+                                <span>Linux</span>
+                                <span>Networking Fundamentals</span>
+                                <span>Cybersecurity Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">2</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 02</span>
+                            <h3 class="node-title">Vendor Learning</h3>
+                            <p class="node-desc">Enroll in structured global vendor academy courses available at E-JUST.</p>
+                            <div class="node-tags">
+                                <span>Cisco Networking Academy</span>
+                                <span>Fortinet NSE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">3</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 03</span>
+                            <h3 class="node-title">Practice</h3>
+                            <p class="node-desc">Transition theory into muscle memory through controlled virtual labs and challenges.</p>
+                            <div class="node-tags">
+                                <span>Hack The Box</span>
+                                <span>Hands-on Labs</span>
+                                <span>Capture The Flag (CTFs)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">4</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 04</span>
+                            <h3 class="node-title">Security Skills</h3>
+                            <p class="node-desc">Specialize in core offensive and defensive cybersecurity engineering methodologies.</p>
+                            <div class="node-tags">
+                                <span>Ethical Hacking</span>
+                                <span>Network Security</span>
+                                <span>Web Security</span>
+                                <span>SOC Operations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">5</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 05</span>
+                            <h3 class="node-title">Certifications</h3>
+                            <p class="node-desc">Validate your knowledge with globally recognized international credentials.</p>
+                            <div class="node-tags">
+                                <span>Cisco CCNA 200-301</span>
+                                <span>Fortinet NSE Certifications</span>
+                                <span>Cisco CyberOps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">6</span>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="node-card">
+                            <span class="node-phase">PHASE 06</span>
+                            <h3 class="node-title">Advanced Skills</h3>
+                            <p class="node-desc">Tackle enterprise-scale infrastructure, cloud migrations, and critical infrastructure defenses.</p>
+                            <div class="node-tags">
+                                <span>CCNP Enterprise</span>
+                                <span>Penetration Testing</span>
+                                <span>DFIR</span>
+                                <span>Cloud Security</span>
+                                <span>OT Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="roadmap-node reveal">
+                        <div class="node-marker">
+                            <span class="marker-circle">7</span>
+                            <div class="marker-line end-marker"></div>
+                        </div>
+                        <div class="node-card career-node">
+                            <span class="node-phase">PHASE 07 — DESTINATION</span>
+                            <h3 class="node-title">High-Impact Cybersecurity Career</h3>
+                            <p class="node-desc">Launch into the international cybersecurity workforce across top tier roles:</p>
+                            <div class="career-roles-grid">
+                                <div class="role-pill">SOC Analyst</div>
+                                <div class="role-pill">Network Security Engineer</div>
+                                <div class="role-pill">Penetration Tester</div>
+                                <div class="role-pill">Cybersecurity Engineer</div>
+                                <div class="role-pill">DFIR Analyst</div>
+                                <div class="role-pill">Security Consultant</div>
+                                <div class="role-pill">Cloud Security Engineer</div>
+                                <div class="role-pill">OT Security Engineer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             WHY JOIN SECTION
+        ========================================================== -->
+        <section class="section why-join-section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">CLUB MEMBERSHIP VALUE</span>
+                    <h2 class="section-title">What You Get</h2>
+                    <p class="section-desc">
+                        Everything you need to accelerate your engineering journey alongside like-minded cybersecurity peers.
+                    </p>
+                </div>
+
+                <div class="grid grid-3 why-grid">
+                    <!-- Card 1 -->
+                    <div class="benefit-card reveal" data-delay="100">
+                        <div class="benefit-number">01</div>
+                        <h3 class="benefit-title">Technical Sessions</h3>
+                        <p class="benefit-text">Regular hands-on cybersecurity workshops covering offensive tools, defensive protocols, and real threat vectors.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="benefit-card reveal" data-delay="200">
+                        <div class="benefit-number">02</div>
+                        <h3 class="benefit-title">Practical Labs</h3>
+                        <p class="benefit-text">Learn by practicing in live virtual lab environments designed to replicate authentic enterprise corporate topologies.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="benefit-card reveal" data-delay="300">
+                        <div class="benefit-number">03</div>
+                        <h3 class="benefit-title">CTF Competitions</h3>
+                        <p class="benefit-text">Develop real security problem-solving skills through both internal university CTFs and global challenges.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="benefit-card reveal" data-delay="400">
+                        <div class="benefit-number">04</div>
+                        <h3 class="benefit-title">Certification Guidance</h3>
+                        <p class="benefit-text">Understand which certifications fit your career trajectory and receive structured study support for Cisco and Fortinet.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="benefit-card reveal" data-delay="500">
+                        <div class="benefit-number">05</div>
+                        <h3 class="benefit-title">Community</h3>
+                        <p class="benefit-text">Learn, collaborate, and share challenges with fellow Cyber Security and Computer Science students at E-JUST.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="benefit-card reveal" data-delay="600">
+                        <div class="benefit-number">06</div>
+                        <h3 class="benefit-title">Career Preparation</h3>
+                        <p class="benefit-text">Connect university coursework with industry skills, portfolio projects, and direct technical interview readiness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             FINAL MESSAGE SECTION (SLIDE PRESENTATION IMPACT)
+        ========================================================== -->
+        <section class="section final-message-section">
+            <div class="container text-center reveal">
+                <div class="slide-keynote-frame">
+                    <p class="keynote-line-1">University Gives You the Foundation.</p>
+                    <h2 class="keynote-line-2">We Help You Build the Experience.</h2>
+                    <div class="keynote-mantras">
+                        <span class="mantra-pill">Start learning.</span>
+                        <span class="mantra-pill">Start practicing.</span>
+                        <span class="mantra-pill">Start competing.</span>
+                        <span class="mantra-pill highlight-mantra">Start building.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             JOIN SECTION
+        ========================================================== -->
+        <section class="section join-section" id="join">
+            <div class="container">
+                <div class="join-card reveal">
+                    <div class="join-glow"></div>
+                    <div class="join-grid">
+                        <div class="join-info-col">
+                            <span class="section-tag tag-white">BECOME A MEMBER</span>
+                            <h2 class="join-title">Your Cybersecurity Journey Starts Here.</h2>
+                            <p class="join-subtitle">E-JUST Cyber Security Club</p>
+                            <p class="join-desc">
+                                Join the official student cybersecurity community at Egypt-Japan University of Science and Technology. Connect with peers, participate in workshops, access vendor academy tracks, and sharpen your skills.
+                            </p>
+                            <div class="join-buttons-group">
+                                <a href="https://chat.whatsapp.com/GLzj9mukotrLXghBbmgIoj" data-community="whatsapp" target="_blank" rel="noopener noreferrer" class="btn btn-social btn-whatsapp">
+                                    <svg class="social-btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.884 2.79.884 3.179 0 5.766-2.587 5.767-5.766.002-3.18-2.585-5.77-5.766-5.77zm0 10.455c-.98 0-1.74-.298-2.518-.797l-.18-.116-1.579.414.421-1.54-.12-.191c-.551-.876-.842-1.758-.841-2.659.001-2.584 2.102-4.685 4.817-4.685 2.716 0 4.817 2.101 4.817 4.685 0 2.585-2.101 4.889-4.817 4.889zm3.171-3.665c-.174-.087-1.031-.509-1.19-.567-.16-.059-.277-.087-.394.087-.117.174-.452.567-.554.684-.102.116-.204.131-.378.044-.175-.088-.737-.272-1.403-.867-.518-.462-.868-1.033-.97-1.207-.102-.175-.011-.269.076-.356.079-.078.174-.204.262-.305.087-.102.116-.174.174-.291.059-.117.029-.219-.014-.306-.044-.088-.394-.949-.539-1.3-.142-.342-.286-.296-.394-.301l-.335-.006c-.117 0-.306.044-.466.219-.16.175-.612.597-.612 1.456 0 .859.626 1.689.714 1.805.087.117 1.233 1.883 2.986 2.64.417.18.743.287.997.368.419.133.801.114 1.103.069.336-.05 1.031-.422 1.177-.828.145-.407.145-.756.102-.828-.043-.073-.16-.117-.335-.204z"/>
+                                    </svg>
+                                    <span>Join WhatsApp Community</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- QR Code Scanner Column -->
+                        <div class="join-qr-col">
+                            <div class="qr-card">
+                                <div class="qr-frame">
+                                    <img src="assets/qr-code.png" alt="E-JUST Cyber Security Club community QR code" class="qr-img" width="2205" height="2205">
+                                    <div class="qr-corner qr-corner-tl"></div>
+                                    <div class="qr-corner qr-corner-tr"></div>
+                                    <div class="qr-corner qr-corner-bl"></div>
+                                    <div class="qr-corner qr-corner-br"></div>
+                                </div>
+                                <span class="qr-label">Scan to Join</span>
+                                <span class="qr-sub">Open your phone camera and point it at the code.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-row">
+                        <img src="assets/cyber-club-logo.png" alt="E-JUST Cyber Club" width="48" height="48">
+                        <div>
+                            <span class="footer-title">E-JUST Cyber Security Club</span>
+                            <span class="footer-sub">Egypt-Japan University of Science and Technology</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Official student cybersecurity activity empowering E-JUST engineers with practical networking, defense, penetration testing, and industry certifications.
+                    </p>
+                </div>
+
+                <div class="footer-links-group">
+                    <span class="footer-heading">Navigation</span>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Club</a></li>
+                        <li><a href="#partners">Opportunities</a></li>
+                        <li><a href="#fortinet">Fortinet Partner</a></li>
+                        <li><a href="#cisco">Cisco NetAcad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <span class="footer-heading">Learning</span>
+                    <ul class="footer-links">
+                        <li><a href="#activities">Club Activities</a></li>
+                        <li><a href="#ctf">Capture The Flag</a></li>
+                        <li><a href="#roadmap">Career Roadmap</a></li>
+                        <li><a href="#join">Join the Club</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 E-JUST Cyber Security Club. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <span>Egypt-Japan University of Science and Technology (E-JUST)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Vanilla JavaScript -->
+    <div id="site-notice" class="site-notice" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
